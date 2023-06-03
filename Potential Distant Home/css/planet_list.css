@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, intro__underi, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Граница */
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    background: url(../src/galaxy.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+body, header, footer {
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    color: #fff;
+
+    -webkit-filter: url(#blurMe);
+	filter: url(#blurMe);
+
+    overflow: hidden;
+}
+
+::selection {
+    background: #fff;
+    color: black;
+    text-shadow: none;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 20%;
+    pointer-events: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: blue;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.faq {
+    display: flex;
+    width: 40%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.faq-text {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+}
+
+/* Planet */
+
+.planet {
+    display: flex;
+    margin-left: 5%;
+    width: 1000px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.planet-img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+}
+
+.planet-text {
+    width: 70%;
+    height: 80%;
+    background-color: green;
+    margin: auto;
+
+}
+
+.planet-img-text {
+    margin: auto;
+    font-size: 30px;
+}
+
+.gallery {
+    position: absolute;
+    background-color: aqua;
+    width: 1000px;
+    height: 1000px;
+    margin-top: 9vh;
+    margin-left: 120vh;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 8%;
+    display: flex;
+    height: 150px;
+}
+
+.back {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    margin-left: 5%;
+    background-color: black;
+}
+
+.back-text {
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+#timedisplay {
+    font-size: 100px;
+    width: 500px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: 5%;
+}

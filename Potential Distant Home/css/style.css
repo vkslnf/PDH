@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, intro__underi, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Граница */
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    background: url(../src/galaxy.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+body, header, footer {
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    color: #fff;
+
+    -webkit-filter: url(#blurMe);
+	filter: url(#blurMe);
+
+    overflow: hidden;
+}
+
+::selection {
+    background: #fff;
+    color: black;
+    text-shadow: none;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 20%;
+    pointer-events: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: blue;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.faq {
+    display: flex;
+    width: 40%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.faq-text {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 40%;
+    height: 15%;
+    background-color: black;
+}
+
+.intro-text {
+    margin: auto;
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.list {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: black;
+}
+
+.list-text {
+    margin: auto;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Planet */
+
+.planet {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 500px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.planet-img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+}
+
+.planet-text {
+    width: 60%;
+    height: 80%;
+    background-color: green;
+    margin: auto;
+
+}
+
+.planet-img-text {
+    margin: auto;
+    font-size: 30px;
+}
+
+/* Footer */
+
+#timedisplay {
+    font-size: 100px;
+    width: 500px;
+    height: 100px;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: 5%;
+}
